@@ -1,0 +1,148 @@
+body {
+  background-image: url("images/background.png");
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.sides {
+  height: 100%;
+  width: 25%;
+  display: block;
+}
+.middle {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.centerdivs {
+  height: 25%;
+  width: 100%;
+}
+
+centerdiv {
+  height: 5%;
+  width: 100%;
+}
+.centerdivs img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.centerdivs:hover .img {
+  transform: scale(1.5);
+}
+
+.viddiv {
+  height: 70%;
+  width: 100%;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  cursor: pointer;
+  transition:
+    filter 0.5s ease,
+    transform 0.3s ease;
+}
+
+img:active {
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+}
+.selected {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.imagediv {
+  height: 33%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    background-color: black;
+  }
+  .sides {
+    height: 25%;
+    width: 100%;
+    display: flex;
+  }
+  .middle {
+    height: 60%;
+    width: 100%;
+    display: block;
+  }
+  .centerdivs {
+    height: 25%;
+    width: 100%;
+  }
+  .imagediv {
+    height: 100%;
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+  .sides {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+  .middle {
+    height: 50%;
+    width: 100%;
+  }
+  .imagediv {
+    height: 33%;
+    width: 100%;
+  }
+  .centerdivs {
+    height: 0%;
+    width: 0%;
+  }
+  .viddiv {
+    height: 100%;
+    width: 100%;
+  }
+}

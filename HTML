@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="images/db.ico" rel="icon" type="image/x-icon" />
+    <title>CSProject2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sides">
+      <div class="imagediv center-content">
+        <img
+          class="img"
+          src="images/homelander1.png"
+          id="b1"
+          onclick="homelander()"
+        />
+      </div>
+      <div class="imagediv center-content">
+        <img class="img" src="images/Atrain.png" id="b2" onclick="Atrain()" />
+      </div>
+      <div class="imagediv center-content">
+        <img
+          class="img"
+          src="images/blacknoir.png"
+          id="b3"
+          onclick="Blacknoir()"
+        />
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="centerdivs center-content">
+        <img class="img" src="images/logo.png" onclick="trailer()" />
+      </div>
+
+      <div class="viddiv center-content">
+        <iframe
+          id="videoFrame"
+          width="100%"
+          height="100%"
+          src=""
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="centerdiv"></div>
+    </div>
+
+    <div class="sides">
+      <div class="imagediv center-content">
+        <img
+          class="img"
+          src="images/butcher.png"
+          id="b4"
+          onclick="Billybutcher()"
+        />
+      </div>
+      <div class="imagediv center-content">
+        <img class="img" src="images/hughie.png" id="b5" onclick="Hughie()" />
+      </div>
+      <div class="imagediv center-content">
+        <img
+          class="img"
+          src="images/soldierboy.png"
+          id="b6"
+          onclick="Soldierboy()"
+        />
+      </div>
+    </div>
+    <audio src="audio/atrain.m4a" id="a1"></audio>
+    <audio src="audio/soldierboy.m4a" id="sb1"></audio>
+    <audio src="audio/hughie.m4a" id="hh1"></audio>
+    <audio src="audio/butcher.m4a" id="bb1"></audio>
+    <audio src="audio/blacknoir.m4a" id="bn1"></audio>
+    <audio src="audio/homelander.m4a" id="h1"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
